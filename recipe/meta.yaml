@@ -1,5 +1,5 @@
 {% set name = "gloe" %}
-{% set version = "0.5.8" %}
+{% set version = "0.5.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gloe-{{ version }}.tar.gz
-  sha256: 004ad425e8a8230649b99f5065d268f889060c5c3616ec954f741a8bdf52378e
+  sha256: 83a3a8bc66929e7f5d2a0ed485878badd7996e1ce659916639a14625206ae057
 
 build:
   noarch: python
