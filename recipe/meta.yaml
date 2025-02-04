@@ -1,5 +1,5 @@
 {% set name = "gloe" %}
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/gloe-{{ version }}.tar.gz
-  sha256: 50b60e81d1a3048f8aad70e5ccc062ca75cac0d5f7af9542dc7ce770db91f843
+  sha256: 91e9601643f9ff806db8bfcdb19cdfe7461520a322a3aba544a98db790002be8
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
